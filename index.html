@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <style>
+        ul {
+           list-style-type: none;
+           margin: 0;
+           padding: 0; 
+           
+           
+           
+           overflow: hidden; 
+           background-color:black;
+           }
+           /*---below  is desktop view---*/
+           
+         /* li {
+            display:block;
+            float:left;
+            padding: 8px;
+            text-align:center;
+            border: 1px solid black;
+            border-right: none; 
+            
+            }
+         li a {
+             text-decoration:none;
+             color: white;
+             padding: 14px 16px;
+         }        
+
+         li a:hover {
+             background-color: purple;
+         }
+         li a:active {
+            text-decoration: underline;
+         } */
+
+         /*---below is mobile first---*/
+
+         li a {
+            display:block;
+            background-color: yellowgreen;
+            color:black;
+            text-decoration:none;
+            padding: 8px;
+            
+            text-align:center;
+             }
+        li {
+            
+            border-bottom: 1px solid black;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+        li a:hover {
+            background-color:whitesmoke;
+            }
+        li a:active {
+            text-decoration:underline;
+        }
+    </style>    
+<ul>
+    <li><a href="#home">home</a></li>
+    <li><a href="#news">news</a></li>
+    <li><a href="#contact">contact</a></li>
+    <li><a href="#about">about</a></li>
+</ul>
+
+<p>Note: We use href="#" for test links. In a real web site this woud be urls. </p>
+
+</body>
+</html>
