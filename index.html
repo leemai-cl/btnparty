@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
+        
         <link rel="stylesheet" href="custom.css">
         
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
          <script src="js.js"></script>
-        <!-- <script>
-        $(document).ready(function(){
-          $("button").click(function(){
-            $("p").fadeToggle(500);
-          });
-        });
-        </script> -->
     </head>
-<body>
+<body class="parallax">
     
+    
+    <script>
+        let n=0
+        let x=0
+        
+        
+        while (n<3){
+            n++
+            x += n;
+        }
+        
+        function btnmath() {
+
+            document.getElementById("btnnum").innerHTML = x;
+        }
+
+    </script>
   
 <ul>
     <li><a href="#home">home</a></li>
@@ -22,9 +34,27 @@
     <li><a href="#contact">contact</a></li>
     <li><a href="#about">about</a></li>
 </ul>
-<button>Click this button to TOGGLE content on this page!</button>
-
+<center><h1>This is my web page for the Code Louisville project!</h1>
+<button class="btntog">Click this button to TOGGLE content on this page!</button>
+</center>
 <p>This is all of the pleasant content that I will be showing </p>
+<p id="demo">CLICKABLE TEXT</p>
+<p id="btnnum">this is where number should be</p>
+<p><button onclick="btnmath()">click this button to display a number</button></p>
+<p>This is all of the pleasant content that I will be showing </p>
+<p>Try these two buttons below! "1" creates useless buttons. "2" deletes them!</p>
 
+<br>
+<center>
+<div><button onclick="btnFunction()">1</button></div>
+<div><button onclick="myFunction5()">2</button></div>
+</center>
+<br>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pellentesque quam sed ante hendrerit lacinia. Pellentesque bibendum ligula eget felis elementum, ac imperdiet nunc pretium. Sed varius vel velit quis semper. Mauris vitae massa ipsum. Vivamus consequat dapibus quam, quis lobortis ante tincidunt ut. Integer pulvinar malesuada ante non dictum. Nulla eleifend pretium erat, eu aliquam orci rhoncus nec. Proin at tincidunt nisi, nec rutrum ipsum. Nunc tempus nisl metus, a tristique risus bibendum eu. Mauris at purus et ipsum vestibulum vehicula. Phasellus id ultrices est, in egestas nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc quis nisl viverra, blandit lacus at, tempus risus. Suspendisse in nisl a felis auctor pretium. Integer efficitur, turpis malesuada finibus laoreet, augue lectus rhoncus sem, ac interdum nisi turpis non dui. Nulla tincidunt mattis erat, lacinia scelerisque elit maximus quis.
+
+    Curabitur mi ipsum, lobortis ut finibus quis, convallis sit amet augue. Sed eleifend, eros ac congue viverra, risus magna vulputate dui, id aliquet dui eros ut magna. Donec a libero sollicitudin, pharetra nisl ac, euismod velit. Mauris ante eros, cursus vel ante non, imperdiet sollicitudin dui. Sed in luctus tortor. Phasellus viverra pulvinar tristique. Praesent accumsan efficitur velit, sit amet commodo quam fermentum et. Nam viverra porta mi in vehicula. Nunc a mattis nisl. Phasellus sollicitudin eros ut tellus mattis, et dapibus mi tempus. Mauris quis gravida ex, viverra consectetur risus.
+    
+    Aenean sollicitudin purus ipsum, eget dapibus est euismod a. Suspendisse vel metus eros. Donec vulputate ex sed neque facilisis lobortis. Donec nec lacus tellus. Fusce vitae elit augue. Vivamus ac lectus viverra diam dictum posuere. Donec orci nunc, euismod vel maximus quis, viverra pellentesque elit. Phasellus tempus tincidunt nunc id fringilla. Nunc vestibulum fermentum pretium.</p>
 </body>
 </html>

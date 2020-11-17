@@ -1,3 +1,30 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.parallax {
+    /* The image used */
+    background-image: url('https://images-na.ssl-images-amazon.com/images/I/812dKz%2BvBcL._AC_SL1500_.jpg');
+  
+    /* Full height */
+    height: 100%; 
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+h1 {
+    display: inline-block;
+    color: whitesmoke;
+    
+}
+
+.btntog {
+    background-color: yellowgreen;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -7,6 +34,17 @@ ul {
     overflow: hidden; 
     background-color:black;
     }
+
+    #demo {
+        color:darkred;
+    }
+    p {
+        padding:5px;
+        display: block;
+        background-color: whitesmoke;
+    }
+
+    
     /*---below  is desktop view---*/
   @media screen and (min-width: 700px)  {
   li {
@@ -35,7 +73,7 @@ ul {
   @media screen and (max-width: 700px) {
   li a {
      display:block;
-     background-color: yellowgreen;
+     background-color: cyan;
      color:black;
      text-decoration:none;
      padding: 8px;
