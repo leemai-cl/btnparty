@@ -2,17 +2,27 @@
 <html>
     <head>
         <link rel="stylesheet" href="custom.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+            $("p").fadeToggle(500);
+          });
+        });
+        </script>
     </head>
 <body>
-   
+    
+  
 <ul>
     <li><a href="#home">home</a></li>
     <li><a href="#news">news</a></li>
     <li><a href="#contact">contact</a></li>
     <li><a href="#about">about</a></li>
 </ul>
+<button>Click this button to TOGGLE content on this page!</button>
 
-<p>Note: We use href="#" for test links. In a real web site this woud be urls. </p>
+<p>This is all of the pleasant content that I will be showing </p>
 
 </body>
 </html>
