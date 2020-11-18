@@ -12,20 +12,7 @@
     
     
     <script>
-        let n=0
-        let x=0
-        
-        
-        while (n<3){
-            n++
-            x += n;
-        }
-        
-        function btnmath() {
-
-            document.getElementById("btnnum").innerHTML = x;
-        }
-
+       
     </script>
   
 <ul>
@@ -46,10 +33,23 @@
 
 <br>
 <center>
-<div><button onclick="btnFunction()">1</button></div>
-<div><button onclick="myFunction5()">2</button></div>
+    <form target="frame" name="myForm" onsubmit="return validateForm()">
+        <label for="btnform">how many buttons do you want?</label><br>
+        <input type="number" id="btnform" name="btnform">
+        <input type="submit" value="Submit" >
+    </form>
+    
+    <div><button onclick="btnFunction()">1</button></div>
+    <div><button onclick="myFunction5()">2</button></div>
+    <div><button onclick="btnloop()">3</button></div>
+    <iframe name="frame"></iframe>
 </center>
 <br>
+
+<p id="demo2">buttons appear here -></p>
+
+
+
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pellentesque quam sed ante hendrerit lacinia. Pellentesque bibendum ligula eget felis elementum, ac imperdiet nunc pretium. Sed varius vel velit quis semper. Mauris vitae massa ipsum. Vivamus consequat dapibus quam, quis lobortis ante tincidunt ut. Integer pulvinar malesuada ante non dictum. Nulla eleifend pretium erat, eu aliquam orci rhoncus nec. Proin at tincidunt nisi, nec rutrum ipsum. Nunc tempus nisl metus, a tristique risus bibendum eu. Mauris at purus et ipsum vestibulum vehicula. Phasellus id ultrices est, in egestas nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc quis nisl viverra, blandit lacus at, tempus risus. Suspendisse in nisl a felis auctor pretium. Integer efficitur, turpis malesuada finibus laoreet, augue lectus rhoncus sem, ac interdum nisi turpis non dui. Nulla tincidunt mattis erat, lacinia scelerisque elit maximus quis.
 

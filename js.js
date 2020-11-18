@@ -21,18 +21,18 @@ function btnmath() {
 }
 
 
-function btnFunction() {
-    var demo2 = document.getElementById("demo2")
-    var button = document.createElement("BUTTON")
-    button.innerHTML = "___";
-    demo.appendChild(button)
+// function btnFunction() {
+//     // var demo2 = document.getElementById("demo2")
+//     var button = document.createElement("BUTTON")
+//     button.innerHTML = "___";
+//     demo.appendChild(button)
     
-    console.log(button)
-}
+//     console.log(button)
+// }
 
-function myFunction5() {
-    document.getElementById("demo").innerHTML = "";
-}
+// function myFunction5() {
+//     document.getElementById("demo").innerHTML = "";
+// }
 
 window.onload=function(){
 document.getElementById("demo").addEventListener("click", myFunction);
@@ -41,3 +41,35 @@ function myFunction() {
   document.getElementById("demo").innerHTML = "you've clicked this ";
 }
 
+ 
+var i;
+  
+function btnloop() { 
+    let l = document.forms["myForm"]["btnform"].value;
+  for (i = 0; i < l; i++) {
+   btnFunction();
+ }
+}
+
+function btnFunction() {
+    var demo2 = document.getElementById("demo2")
+    var button = document.createElement("BUTTON")
+    button.innerHTML = "___";
+    demo2.appendChild(button)
+    
+    console.log(button)
+}
+
+ function myFunction5() {
+     document.getElementById("demo2").innerHTML = "buttons appear here ->";
+}
+
+function validateForm() {
+    let x = document.forms["myForm"]["btnform"].value;
+    if (x == "") {
+        alert("how many buttons do you want?");
+        return false;
+        
+    }
+
+}
