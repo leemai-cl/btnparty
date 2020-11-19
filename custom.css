@@ -1,13 +1,13 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
   }
-
+/* stops the page from reloading on submit */
   iframe{
     display: none;
 }
 
 
-/* The animation code */
+/* animation for highlighted buttons */
 @keyframes rainbowtext {
   0%   {background-color:red; }
   25%  {background-color:yellow;  }
@@ -15,7 +15,7 @@ body {
   75%  {background-color:blueviolet;  }
   100% {background-color:red;  }
 }
-
+/* animation for spinning title */
 @keyframes title {
 
   
@@ -40,7 +40,7 @@ body {
   }
 
 
-/* The element to apply the animation to */
+/* numbered buttons */
 div {
 animation-duration: 21s;
 animation-name: rainbowtext;
@@ -48,7 +48,7 @@ animation-iteration-count: infinite;
 animation-direction: alternate;
 animation-timing-function: ease-in;
 }
-
+/*class applied to h1*/
 .title {
     animation-duration: 2s;
     animation-name: title;
@@ -70,9 +70,6 @@ animation-timing-function: ease-in;
 
 
 
-/* .column{
-    column-count: 3;
-} */
 
 .parallax {
     
@@ -92,7 +89,7 @@ h1 {
     color: whitesmoke;
     
 }
-
+/*js button to toggle content on page*/
 .btntog {
     background-color: yellowgreen;
 }
