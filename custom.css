@@ -6,6 +6,10 @@ body {
     display: none;
 }
 
+/* .column{
+    column-count: 3;
+} */
+
 .parallax {
     
     background-image: url('https://images-na.ssl-images-amazon.com/images/I/812dKz%2BvBcL._AC_SL1500_.jpg');
@@ -51,6 +55,10 @@ ul {
     
     /*---below  is desktop view---*/
   @media screen and (min-width: 700px)  {
+  .column{
+      column-count: 3;
+  }
+
   li {
      display:block;
      float:left;
