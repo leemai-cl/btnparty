@@ -52,11 +52,12 @@ function btnFunction() {
      document.getElementById("demo2").innerHTML = "buttons appear here ->";
 }
 //pulls form number value, this function might not be needed anymore
-// function validateForm() {
-//     let x = document.forms["myForm"]["btnform"].value;
-//     if (x == "") {
-//         alert("how many buttons do you want?");
-//         return false;
+function validateForm() {
+     let x = document.forms["myForm"]["btnform"].value;
+     if (x == "") {
+         alert("how many buttons do you want?");
+         return false;
         
-//     }
+     }
 
+    }
