@@ -6,7 +6,7 @@ This portfolio project is part of the Code Louisville track completion requireme
 
 There are CSS and Javascript elements described below:
 
-1. A CSS animation that runs on loading the page, and hovering over the title
+1. A CSS animation that runs on loading the page, spinning the title
 2. A navigation menu that expands and collapses at desktop and mobile sizes
 3. Hide/show content on the page (jQuery)
 4. Javascript for loop and form validation to create any number of useless buttons
