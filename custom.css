@@ -16,21 +16,24 @@ body {
   100% {background-color:red;  }
 }
 
-@keyframes bounceIn {
+@keyframes title {
+
+  
     0% {
       transform: scale(7);
-      opacity: 1;
-    }
+          }
     60% {
       transform: scale(0) rotate(360deg);
-      opacity: 1;
-    }
+        }
     61% {
         transform:scale(0);
+        opacity: 1;
     }
-    80% {
-        transform: scale(3)
+    62% {
+        transform:scale(15);
+        opacity: 0;
     }
+    
     100% {
       transform: scale(1);
     }
@@ -39,16 +42,17 @@ body {
 
 /* The element to apply the animation to */
 div {
-animation-duration: 20s;
+animation-duration: 21s;
 animation-name: rainbowtext;
 animation-iteration-count: infinite;
 animation-direction: alternate;
-
+animation-timing-function: ease-in;
 }
 
 .title {
     animation-duration: 2s;
-    animation-name: bounceIn;
+    animation-name: title;
+    
     
 }
 

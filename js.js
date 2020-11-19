@@ -46,7 +46,10 @@ var i;
   
 function btnloop() { 
     let l = document.forms["myForm"]["btnform"].value;
-  for (i = 0; i < l; i++) {
+    if (l == "") {
+      alert("how many buttons do you want?");
+      return false;}
+    for (i = 0; i < l; i++) {
    btnFunction();
  }
 }
