@@ -23,30 +23,34 @@
 </ul>
 
 <center><h1>This is my web page for the Code Louisville project!</h1>
-<button class="btntog">Click this button to TOGGLE content on this page!</button>
+<button class="btntog">Click this button to TOGGLE content on this page!</button><br>
 </center>
-
+<center>
+    <form target="frame" name="myForm" onsubmit="return validateForm()">
+        <label id="label" for="btnform">Type a number into the form below. How many buttons do you want?</label><br>
+        <input type="number" id="btnform" name="btnform">
+        <input type="submit" value="Submit" >
+    </form>
+    <p>"1" creates a single useless button -></p>
+    
+    <div><button onclick="btnFunction()">1</button></div>
+    <p>"2" clears the page of spawned buttons</p>
+    <div><button onclick="myFunction5()">2</button></div>
+    <p>"3" uses a loop to create buttons according to the submitted form!</p>
+    <div><button onclick="btnloop()">3</button></div>
+    <iframe name="frame"></iframe>
+</center>
+<p id="demo2">buttons appear here -></p>
 <p>This is all of the pleasant content that I will be showing </p>
 <p id="demo">CLICKABLE TEXT</p>
 <p id="btnnum">this is where number should be</p>
 <p><button onclick="btnmath()">click this button to display a number</button></p>
 <br>
 
-<center>
-    <form target="frame" name="myForm" onsubmit="return validateForm()">
-        <label for="btnform">how many buttons do you want?</label><br>
-        <input type="number" id="btnform" name="btnform">
-        <input type="submit" value="Submit" >
-    </form>
-    
-    <div><button onclick="btnFunction()">1</button></div>
-    <div><button onclick="myFunction5()">2</button></div>
-    <div><button onclick="btnloop()">3</button></div>
-    <iframe name="frame"></iframe>
-</center>
+
 <br>
 
-<p id="demo2">buttons appear here -></p>
+
 
 
 
