@@ -6,7 +6,6 @@ body {
     display: none;
 }
 
-
 /* animation for highlighted buttons */
 @keyframes rainbowtext {
   0%   {background-color:red; }
@@ -17,7 +16,6 @@ body {
 }
 /* animation for spinning title */
 @keyframes title {
-
   
     0% {
       transform: scale(7);
@@ -32,14 +30,11 @@ body {
     62% {
         transform:scale(15);
         opacity: 0;
-    }
-    
+    }    
     100% {
       transform: scale(1);
     }
   }
-
-
 /* numbered buttons */
 div {
 animation-duration: 21s;
@@ -51,34 +46,17 @@ animation-timing-function: ease-in;
 /*class applied to h1*/
 .title {
     animation-duration: 2s;
-    animation-name: title;
-    
-    
+    animation-name: title; 
 }
-
-
-
 #label {
     background-color: black;
     padding: 2px;
-    color: white;
-    
+    color: white;    
 }
-
-
-
-
-
-
-
 .parallax {
-    
     background-image: url('https://images-na.ssl-images-amazon.com/images/I/812dKz%2BvBcL._AC_SL1500_.jpg');
-  
-    
     height: 100%; 
     width: 100%;
-   
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -86,24 +64,19 @@ animation-timing-function: ease-in;
   }
 h1 {
     display: inline-block;
-    color: whitesmoke;
-    
+    color: whitesmoke;    
 }
 /*js button to toggle content on page*/
 .btntog {
     background-color: yellowgreen;
 }
-
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;     
-    
-    
+    padding: 0;   
     overflow: hidden; 
     background-color:black;
     }
-
     #demo {
         color:darkred;
     }
@@ -112,16 +85,41 @@ ul {
         display: block;
         display: none;
         background-color: whitesmoke;
+        border-radius: 50%;
     }
-
-    
+    li a {
+        display:block;
+        background-color: cyan;
+        color:black;
+        text-decoration:none;
+        padding: 8px;        
+        text-align:center;
+         }
+    li {        
+        border-bottom: 1px solid black;
+    }
+    li:last-child {
+        border-bottom: none;
+    }
+    li a:hover {
+        background-color:whitesmoke;
+        }
+    li a:active {
+        text-decoration:underline;
+    }
+    h3 {
+        
+        color: white;
+        display: block;
+        background-color: black;
+    }
     /*---below  is desktop view---*/
   @media screen and (min-width: 700px)  {
   .column{
-      column-count: 3;
+      column-count: 2;
   }
   .btncolumn {
-      column-count: 3;
+      column-count: 2;
   }
 
   li {
@@ -135,10 +133,9 @@ ul {
      }
   li a {
       text-decoration:none;
-      color: white;
+      color: black;
       padding: 14px 16px;
-  }        
-
+  } 
   li a:hover {
       background-color: purple;
   }
@@ -146,28 +143,11 @@ ul {
      text-decoration: underline;
   }
   }   
-  /*---below is mobile first---*/
-  @media screen and (max-width: 700px) {
-  li a {
-     display:block;
-     background-color: cyan;
-     color:black;
-     text-decoration:none;
-     padding: 8px;
-     
-     text-align:center;
-      }
- li {
-     
-     border-bottom: 1px solid black;
- }
- li:last-child {
-     border-bottom: none;
- }
- li a:hover {
-     background-color:whitesmoke;
-     }
- li a:active {
-     text-decoration:underline;
- }
- }
+  @media screen and (min-width: 1024px)  {
+    .column{
+        column-count: 3;
+    }
+    .btncolumn {
+        column-count: 3;
+    }
+}
